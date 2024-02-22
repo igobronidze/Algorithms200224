@@ -1,3 +1,5 @@
+// https://codeforces.com/contest/1915/problem/A
+
 #include <iostream>
 using namespace std;
 

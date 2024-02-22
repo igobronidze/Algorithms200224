@@ -1,3 +1,5 @@
+// https://codeforces.com/contest/1915/problem/A
+
 package contest_918;
 
 import java.util.Scanner;
