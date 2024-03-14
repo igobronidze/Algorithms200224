@@ -12,13 +12,13 @@ void merge(int arr[], int l, int m, int r) {
 	}
 	
 	int i = 0, j = 0, k = l;
-	while (i < n || j < n) {
-		if (i == n) {
+	while (i < n1 || j < n2) {
+		if (i == n1) {
 			arr[k] = rArr[j];
 			j++;
-		} else if (j == n) {
+		} else if (j == n2) {
 			arr[k] = lArr[i];
-			i++
+			i++;
 		} else if (lArr[i] < rArr[j]) {
 			arr[k] = lArr[i];
 			i++;
@@ -28,9 +28,6 @@ void merge(int arr[], int l, int m, int r) {
 		}
 		k++;
 	}
-	// 2 5 9
-	// 6 8
-	// 2 5 6 8 9 
 }
 
 void mergeSort(int arr[], int l, int r) {
@@ -43,10 +40,16 @@ void mergeSort(int arr[], int l, int r) {
 	merge(arr, l, m, r);
 }
 
-
 int main() {
+	int n = 7;
 	int arr[] = {3, 15, 7, 10, 8, 22, 5};
 	
+	mergeSort(arr, 0, n);
+	
+	for (int i = 0; i < n; i++) {
+		cout << arr[i] << " ";
+	}
+	cout << endl;
 	
 	return 0;
 }
