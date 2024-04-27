@@ -26,7 +26,7 @@ int main() {
 			}
 			
 			int y = b[i];
-			if (mpB.find(x) == mpB.end()) {
+			if (mpB.find(y) == mpB.end()) {
 				mpB[y] = 1;
 			} else {
 				mpB[y] = mpB[y] + 1;
